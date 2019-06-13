@@ -1,0 +1,12 @@
+application/*.php
+runtime/
+public/uploads/*
+public/updirs/*
+public/install/*
+public/openv*
+.vscode/
+public/
+application/*.php
+framework/
+data/
+!.gitignore

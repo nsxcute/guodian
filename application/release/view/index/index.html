@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="{$static}\css\wd.css"/>
+		<style>
+			.pagination{text-align:center;margin-top:20px;margin-bottom: 20px;}
+			.pagination li{margin:0px 10px; border:1px solid #e6e6e6;padding: 3px 8px;display: inline-block;}
+			.pagination .active{background-color: #dd1a20;color: #fff;}
+			.pagination .disabled{color:#aaa;}
+		</style>
+	</head>
+	<body>
+		<div class="screen">
+			<div class="nav">
+				<div class="nav_left"></div>
+				<div class="nav_box">
+					<img src="{$static}\img\logo.png"/>
+				</div>
+				<div class="nav_right">
+					
+				</div>
+			</div>
+			<div class="content">
+				<div class="conLfet"></div>
+				<div class="contentBox">
+					<div class="row_y">
+							{volist name='result' id='res' }
+								{if $res.is_pwd == 1}
+									<div class="box_e">
+											<a href="{$res.link}" class="mak"><img src="{$res.img}"/></a>
+											<p class="boxOne">{$res.sname}</p>
+											<p class="boxTwo"><?php echo date("Y-m-d" , $res['createtime']);?></p>
+									</div>
+								{else}
+								<div class="box_e">
+										<a href="{$res.link}"><img src="{$static}\img\medical.png"/></a>
+										<p class="boxOne">{$res.sname}</p>
+										<p class="boxTwo"> <?php echo date("Y-m-d" , $res['createtime']);?></p>
+									</div>
+								{/if}
+							{/volist}
+					</div>
+				</div>
+				<div class="conright"></div>
+			</div>
+			
+			<div class="page">
+				{$result->render()}
+			</div>
+
+			<div class="footer"></div>
+		</div>
+	</body>
+</html>

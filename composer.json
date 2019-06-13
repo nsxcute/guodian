@@ -1,0 +1,6 @@
+{
+    "require": {
+        "tp5er/tp5-databackup": "dev-master",
+        "guzzlehttp/guzzle": "^6.3"
+    }
+}

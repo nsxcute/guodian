@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="{$static}\css/wd.css"/>
+		<style>
+			.pagination{text-align:center;margin-top:20px;margin-bottom: 20px;}
+			.pagination li{margin:0px 10px; border:1px solid #e6e6e6;padding: 3px 8px;display: inline-block;}
+			.pagination .active{background-color: #dd1a20;color: #fff;}
+			.pagination .disabled{color:#aaa;}
+		</style>
+	</head>
+	<body>
+		<div class="screen">
+			<div class="nav">
+				<div class="nav_left"></div>
+				<div class="nav_box">
+					<img src="{$static}\img/logo.png"/>
+				</div>
+				<div class="nav_right">
+					
+				</div>
+			</div>
+			<div class="content">
+				<div class="conLfet"></div>
+				<div class="contentBox">
+					<div class="row_y">
+
+					<div class="box">
+						<a href="http://www.baidu.com" class="mak"><img src="{$static}\img/medical.png"/></a>
+						<p class="boxOne">智慧城市</p>
+						<p class="boxTwo">666天前</p>
+					</div>
+					<div class="box_e">
+						<a href="http://www.baidu.com"><img src="{$static}\img/medical.png"/></a>
+						<p class="boxOne">智慧城市</p>
+						<p class="boxTwo">三s天前</p>
+					</div>
+
+					</div>
+				</div>
+				<div class="conright"></div>
+			</div>
+			<!-- <div class="page">
+				<div class="pagination" id="pagination"></div>
+			</div> -->
+
+			{$result->render()}
+			<div class="footer"></div>
+		</div>
+	</body>
+	<!-- <script src="{$static}\js/my.js" type="text/javascript" charset="utf-8"></script> -->
+</html>
